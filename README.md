@@ -1,12 +1,39 @@
-## Format document
+# Project Setup
+## package.json
 ```
-SHIFT + ALT + F
+"scripts": {
+    ...
+    "prettier:base": "prettier \"./{e2e,src}/**/*.{scss,ts}\"",
+    "prettier:list": "npm run prettier:base -- --list-different",
+    "prettier:write": "npm run prettier:base -- --write"
+},
+"devDependencies": {
+    ...
+    "prettier": "1.6.1",
+
+},  
 ```
-## Run from command line
+## .prettierrc
 ```
-npm run prettier
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
 ```
-## References
+## VS Code extenstion: Prettier formatter for Visual Studio Code
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+# Usage
+## PowerShell
+```
+npm run prettier:write
+npm run prettier:list | out-host
+```
+## VS Code
+```
+Format Document: alt+shift+F
+```
+# References
 https://github.com/prettier/prettier
 
 https://github.com/prettier/prettier-vscode
