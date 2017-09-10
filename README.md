@@ -20,7 +20,7 @@
   "trailingComma": "es5"
 }
 ```
-## VS Code extenstion: Prettier formatter for Visual Studio Code
+## VS Code extension: Prettier formatter for Visual Studio Code
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
 # Usage
