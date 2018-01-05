@@ -9,16 +9,25 @@
 },
 "devDependencies": {
     ...
-    "prettier": "1.6.1",
+    "prettier": "1.9.2",
 
 },  
 ```
 ## .prettierrc
 ```
 {
-  "singleQuote": true,
-  "trailingComma": "es5"
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "requirePragma": true,
+    "arrowParens": "always"
 }
+```
+## home.ts
+https://prettier.io/docs/en/options.html#require-pragma
+```typescript
+/**
+ * @prettier
+ */
 ```
 ## VS Code extension: Prettier formatter for Visual Studio Code
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
